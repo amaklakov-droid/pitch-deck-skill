@@ -50,8 +50,14 @@ Personal (available in all your projects):
 
 ```bash
 git clone https://github.com/amaklakov-droid/pitch-deck-skill.git
-cp -r pitch-deck-skill/pitch-deck-advisor ~/.claude/skills/
+mkdir -p ~/.claude/skills
+rm -rf ~/.claude/skills/pitch-deck-advisor
+cp -R pitch-deck-skill/pitch-deck-advisor ~/.claude/skills/pitch-deck-advisor
 ```
+
+> Note the explicit destination folder name: on macOS, `cp` copies a
+> directory's *contents* (not the directory itself) when the source path ends
+> with a `/` — which shell tab-completion adds automatically.
 
 Or per-project: copy `pitch-deck-advisor/` into `<project>/.claude/skills/`.
 

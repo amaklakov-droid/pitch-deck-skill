@@ -52,8 +52,14 @@ Skill использует progressive disclosure: модель загружае
 
 ```bash
 git clone https://github.com/amaklakov-droid/pitch-deck-skill.git
-cp -r pitch-deck-skill/pitch-deck-advisor ~/.claude/skills/
+mkdir -p ~/.claude/skills
+rm -rf ~/.claude/skills/pitch-deck-advisor
+cp -R pitch-deck-skill/pitch-deck-advisor ~/.claude/skills/pitch-deck-advisor
 ```
+
+> Обратите внимание на явное имя папки-назначения: на macOS `cp` копирует
+> *содержимое* папки (а не саму папку), если путь источника заканчивается на
+> `/` — а автодополнение по Tab добавляет его автоматически.
 
 Или в конкретный проект: скопируйте папку `pitch-deck-advisor/` в
 `<проект>/.claude/skills/`.

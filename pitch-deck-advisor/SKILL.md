@@ -184,3 +184,35 @@ When auditing an existing deck:
 When the user asks for an actual presentation file (.pptx), build the content
 first using this skill, then use a presentation-building skill/tool if
 available.
+
+## User requirements (standing — apply to every deck without being asked)
+
+### Content: three things every deck must state explicitly
+
+Before finishing any deck (create or review), verify each of these has its own
+clear, dedicated formulation — vague or scattered treatment is a defect:
+
+1. **Problem — one exhaustive formulation in plain language.** A single
+   precise statement of the gap ("не существует продукта, который..."), plus
+   its consequences for each affected party. The reader must be able to quote
+   the problem in one sentence after reading.
+2. **Target audience — who needs it earliest/most.** Name segments explicitly
+   with their role (покупатель / пользователь / бенефициар), and single out
+   who can extract value NOW, even while the market is small. State honestly
+   which segments come later and that early revenue does not depend on them.
+3. **Form factor — what exactly is being built.** Both the essence (mandate,
+   wallet, protocol, ...) and the delivery format of each component:
+   приложение / SDK-библиотека / облачный сервис / SaaS / открытая
+   спецификация / open source. Also state what it is NOT (e.g. "не
+   потребительское приложение, не новый платежный рельс").
+
+### Style for Russian-language decks
+
+- **Never use the letter "ё"** — always "е" (кошелек, расчет, партнер). Verify
+  the final artifact (including speaker notes) contains none.
+- **Business register:** minimal idioms and colloquialisms; only terms accepted
+  in the professional community are allowed (гейт, bps, рельсы, freeze,
+  governance). Avoid startup slang: "отгружать" (→ "выпустить / вывести на
+  рынок"), "городить" (→ "разрабатывать собственное решение"), "убивает"
+  (→ "прекращает действие"), "раздает бесплатно" (→ "предоставляет
+  бесплатно"). No "=" as a verb in headlines — spell it out ("— значит ...").

@@ -1,0 +1,25 @@
+# Pitch Deck Advisor
+
+> Open-source Agent Skill (SKILL.md format, agentskills.io standard) that teaches Claude, OpenAI Codex, GitHub Copilot, Cursor, Gemini CLI and other AI agents how to build, review, and improve investor pitch decks for startups, with deep specialization in high-tech / deep-tech projects. Based on Y Combinator, Sequoia Capital, a16z guidance and DocSend research on 200,000+ investor interactions. MIT licensed.
+
+Install: `npx skills add amaklakov-droid/pitch-deck-skill` or, in Claude Code, `/plugin marketplace add amaklakov-droid/pitch-deck-skill` then `/plugin install pitch-deck-advisor@pitch-deck-skill`.
+
+Capabilities: create mode (slide-by-slide deck outline calibrated to pre-seed / seed / Series A), review mode (3-minute test, 18 automatic red flags, structural gaps), slide surgery (problem, market sizing, traction, team, ask), deep-tech specifics (scientific vs. engineering risk, IP/moat, milestone-based derisking, FOAK financing, beachhead markets). Works in any language; instructions are in English.
+
+## Skill
+
+- [SKILL.md](https://github.com/amaklakov-droid/pitch-deck-skill/blob/main/pitch-deck-advisor/SKILL.md): entry point, core workflow, principles, 12-slide canon
+- [slide-guide.md](https://github.com/amaklakov-droid/pitch-deck-skill/blob/main/pitch-deck-advisor/references/slide-guide.md): detailed per-slide guidance and failure modes
+- [deep-tech.md](https://github.com/amaklakov-droid/pitch-deck-skill/blob/main/pitch-deck-advisor/references/deep-tech.md): deep tech / hard tech specifics
+- [review-checklist.md](https://github.com/amaklakov-droid/pitch-deck-skill/blob/main/pitch-deck-advisor/references/review-checklist.md): full review checklist, 18 red flags, stage calibration
+
+## Documentation
+
+- [README (English)](https://github.com/amaklakov-droid/pitch-deck-skill/blob/main/README.md): what it does, installation for every agent, usage examples
+- [README (Russian)](https://github.com/amaklakov-droid/pitch-deck-skill/blob/main/README.ru.md): документация на русском
+- [AGENTS.md](https://github.com/amaklakov-droid/pitch-deck-skill/blob/main/AGENTS.md): repository guide for AI agents and contributors
+
+## Optional
+
+- [Analytical note (Russian)](https://github.com/amaklakov-droid/pitch-deck-skill/blob/main/docs/analytical-note.ru.md): the full research note the skill was distilled from
+- [Plugin manifest](https://github.com/amaklakov-droid/pitch-deck-skill/blob/main/.claude-plugin/plugin.json): Claude Code plugin metadata

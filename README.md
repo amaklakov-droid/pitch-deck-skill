@@ -2,10 +2,15 @@
 
 🇷🇺 [Документация на русском](README.ru.md)
 
-An open-source [Agent Skill](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview)
-that teaches Claude (and other LLMs supporting the skill format) how to
-**build, review, and improve investor pitch decks** — with deep specialization
-in **high-tech / deep-tech projects**.
+An open-source [Agent Skill](https://agentskills.io) that teaches Claude,
+OpenAI Codex, GitHub Copilot, Cursor, Gemini CLI and any other agent
+supporting the open `SKILL.md` standard how to **build, review, and improve
+investor pitch decks** — with deep specialization in **high-tech / deep-tech
+projects**.
+
+```bash
+npx skills add amaklakov-droid/pitch-deck-skill
+```
 
 The skill distills guidance from Y Combinator (Kevin Hale's "Legible, Simple,
 Obvious"), Sequoia Capital's business-plan template (the one behind Airbnb's
@@ -36,6 +41,11 @@ pitch-deck-advisor/
     ├── slide-guide.md              # Detailed per-slide guidance & failure modes
     ├── deep-tech.md                # Deep tech / hard tech specifics
     └── review-checklist.md         # Full checklist, 18 red flags, stage calibration
+.claude-plugin/
+├── plugin.json                     # Claude Code plugin manifest
+└── marketplace.json                # Lets the repo act as a plugin marketplace
+AGENTS.md                           # Repo guide for AI agents and contributors
+llms.txt                            # Machine-readable index for LLM crawlers
 ```
 
 The skill uses progressive disclosure: the model loads `SKILL.md` when
@@ -44,7 +54,35 @@ low.
 
 ## Installation
 
-### Claude Code (CLI / desktop)
+The skill follows the open [Agent Skills](https://agentskills.io) standard,
+so the same folder works in every agent that supports `SKILL.md`.
+
+### Quick install (any agent)
+
+The [`skills` CLI](https://github.com/vercel-labs/skills) installs the skill
+into the agent(s) you pick (Claude Code, Codex, Copilot, Cursor, Gemini CLI,
+OpenCode, Goose, and more):
+
+```bash
+npx skills add amaklakov-droid/pitch-deck-skill
+```
+
+Install globally (all projects) for a specific agent, for example Codex:
+
+```bash
+npx skills add amaklakov-droid/pitch-deck-skill -g -a codex
+```
+
+### Claude Code (plugin)
+
+Add this repository as a marketplace and install the plugin:
+
+```
+/plugin marketplace add amaklakov-droid/pitch-deck-skill
+/plugin install pitch-deck-advisor@pitch-deck-skill
+```
+
+### Claude Code (manual copy)
 
 Personal (available in all your projects):
 
@@ -71,6 +109,21 @@ Or per-project: copy `pitch-deck-advisor/` into `<project>/.claude/skills/`.
 
 Upload the folder via the [Skills API](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview)
 or pass it to the Agent SDK's skills directory.
+
+### OpenAI Codex, GitHub Copilot, Cursor, Gemini CLI, OpenCode (manual copy)
+
+Copy `pitch-deck-advisor/` into the agent's skills directory:
+
+| Agent          | Project-level          | Global                  |
+| -------------- | ---------------------- | ----------------------- |
+| OpenAI Codex   | `.codex/skills/`       | `~/.codex/skills/`      |
+| GitHub Copilot | `.github/skills/`      | `~/.copilot/skills/`    |
+| Cursor         | `.cursor/skills/`      | `~/.cursor/skills/`     |
+| Gemini CLI     | `.gemini/skills/`      | `~/.gemini/skills/`     |
+| OpenCode       | `.opencode/skills/`    | `~/.config/opencode/skills/` |
+
+Paths follow each vendor's Agent Skills docs; `npx skills add` above resolves
+them for you.
 
 ### Other LLMs
 

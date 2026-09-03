@@ -9,8 +9,10 @@ description: >-
   traction, team, ask); or asks how to pitch VCs, angels, or accelerators —
   even if they never say the words "pitch deck" (e.g. "help me raise a seed
   round", "prepare for demo day", "investor one-pager", "презентация для
-  инвесторов"). Based on Y Combinator, Sequoia Capital, a16z guidance and
-  DocSend research on 200,000+ investor interactions.
+  инвесторов", "питч-дек", "инвестдек", "собрать дек для раунда",
+  "проверь мой дек", "дек для акселератора"). Based on Y Combinator,
+  Sequoia Capital, a16z guidance and DocSend research on 200,000+ investor
+  interactions.
 ---
 
 # Pitch Deck Advisor

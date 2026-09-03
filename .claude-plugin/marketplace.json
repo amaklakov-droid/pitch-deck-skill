@@ -1,0 +1,29 @@
+{
+  "name": "pitch-deck-skill",
+  "owner": {
+    "name": "Alexey Maklakov",
+    "url": "https://github.com/amaklakov-droid"
+  },
+  "metadata": {
+    "description": "Pitch Deck Advisor: an agent skill for building and reviewing investor pitch decks, specialized for high-tech / deep-tech startups.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "pitch-deck-advisor",
+      "source": "./",
+      "description": "Build, review, and improve investor pitch decks (seed / Series A, deep tech). Based on YC, Sequoia, a16z and DocSend research.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Alexey Maklakov",
+        "url": "https://github.com/amaklakov-droid"
+      },
+      "homepage": "https://github.com/amaklakov-droid/pitch-deck-skill",
+      "repository": "https://github.com/amaklakov-droid/pitch-deck-skill",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": ["pitch-deck", "fundraising", "startup", "investor", "deep-tech", "venture-capital"],
+      "tags": ["pitch-deck", "fundraising", "startup", "investor", "deep-tech"]
+    }
+  ]
+}

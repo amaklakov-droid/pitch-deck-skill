@@ -1,0 +1,27 @@
+{
+  "name": "pitch-deck-advisor",
+  "displayName": "Pitch Deck Advisor",
+  "version": "1.0.0",
+  "description": "Build, review, and improve investor pitch decks for startups, with deep specialization in high-tech / deep-tech projects. Based on Y Combinator, Sequoia Capital, a16z guidance and DocSend research.",
+  "author": {
+    "name": "Alexey Maklakov",
+    "url": "https://github.com/amaklakov-droid"
+  },
+  "homepage": "https://github.com/amaklakov-droid/pitch-deck-skill",
+  "repository": "https://github.com/amaklakov-droid/pitch-deck-skill",
+  "license": "MIT",
+  "keywords": [
+    "pitch-deck",
+    "investor-presentation",
+    "fundraising",
+    "startup",
+    "venture-capital",
+    "deep-tech",
+    "seed-round",
+    "series-a",
+    "y-combinator",
+    "sequoia",
+    "docsend"
+  ],
+  "skills": ["./pitch-deck-advisor"]
+}

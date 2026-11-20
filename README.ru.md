@@ -77,7 +77,9 @@ npx skills add amaklakov-droid/pitch-deck-skill -g -a codex
 
 ### Claude Code (плагин)
 
-Плагин опубликован в каталоге плагинов сообщества Anthropic. Установка оттуда:
+Плагин опубликован в каталоге плагинов сообщества Anthropic
+([страница в каталоге](https://claude.ai/customize/plugins/id/9710d3d4-55aa-4573-9a6f-50697d9f537a%40anthropic-plugin-directory?via=directory);
+кнопка «Add to Claude» там же устанавливает его в приложения Claude и Cowork). Установка в Claude Code из каталога:
 
 ```
 /plugin install pitch-deck-advisor@claude-community

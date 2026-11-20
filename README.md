@@ -75,7 +75,13 @@ npx skills add amaklakov-droid/pitch-deck-skill -g -a codex
 
 ### Claude Code (plugin)
 
-Add this repository as a marketplace and install the plugin:
+The plugin is listed in Anthropic's community plugin directory. Install it from there:
+
+```
+/plugin install pitch-deck-advisor@claude-community
+```
+
+Or add this repository as its own marketplace and install the plugin from it:
 
 ```
 /plugin marketplace add amaklakov-droid/pitch-deck-skill

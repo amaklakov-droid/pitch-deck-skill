@@ -77,7 +77,13 @@ npx skills add amaklakov-droid/pitch-deck-skill -g -a codex
 
 ### Claude Code (плагин)
 
-Добавьте репозиторий как маркетплейс и установите плагин:
+Плагин опубликован в каталоге плагинов сообщества Anthropic. Установка оттуда:
+
+```
+/plugin install pitch-deck-advisor@claude-community
+```
+
+Или добавьте этот репозиторий как собственный маркетплейс и установите плагин из него:
 
 ```
 /plugin marketplace add amaklakov-droid/pitch-deck-skill
